@@ -1,0 +1,264 @@
+doctype html
+html(lang='en')
+    include includes/head
+    body
+        section#container
+            // header start
+            include includes/header
+            // header end
+            include includes/sidebar3
+            // sidebar end
+            // main content start
+            section#main-content
+                section.wrapper
+                    // page start
+                    .row
+                        .col-sm-12
+                            section.panel
+                                header.panel-heading
+                                    | 交易员管理
+                                    span.tools.pull-right
+                                        a.fa.fa-chevron-down(href='javascript:;')
+                                        a.fa.fa-cog(href='javascript:;')
+                                        a.fa.fa-times(href='javascript:;')
+                                .panel-body
+                                    .adv-table.editable-table
+                                        .clearfix
+                                            .btn-group
+                                                button#editable-account_new.btn.btn-primary
+                                                    | 新增
+                                                    i.fa.fa-plus
+                                            .btn-group.pull-right
+                                                button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+                                                    | Tools
+                                                    i.fa.fa-angle-down
+                                                ul.dropdown-menu.pull-right
+                                                    li
+                                                        a(href='#') Print
+                                                    li
+                                                        a(href='#') Save as PDF
+                                                    li
+                                                        a(href='#') Export to Excel
+                                        .space15
+                                        table#editable-account.table.table-striped.table-hover.table-bordered
+                                            thead
+                                                tr
+                                                    th 序号
+                                                    th 用户名
+                                                    th 密码
+                                                    th 姓名
+                                                    th 强制止损金额
+                                                    th 状态
+                                                    th 编辑
+                                                    th 删除
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td trader01
+                                                    td 123456
+                                                    td.center 张超
+                                                    td.center 5000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 2
+                                                    td trader02
+                                                    td 123456
+                                                    td.center 许小强
+                                                    td.center 5000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 3
+                                                    td trader05
+                                                    td 123456
+                                                    td.center 李鑫璇
+                                                    td.center 5000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 4
+                                                    td trader06
+                                                    td 123456
+                                                    td.center 胡龙燕
+                                                    td.center 3000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 5
+                                                    td trader07
+                                                    td 123456
+                                                    td.center 朱凯
+                                                    td.center 2000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 6
+                                                    td trader09
+                                                    td 123456
+                                                    td.center 袁晋
+                                                    td.center 2000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 7
+                                                    td trader10
+                                                    td 123456
+                                                    td.center 朱若楠
+                                                    td.center 2000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 8
+                                                    td trader13
+                                                    td 123456
+                                                    td.center 王玲玲
+                                                    td.center 2000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 9
+                                                    td trader14
+                                                    td 123456
+                                                    td.center 刘一奇
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 10
+                                                    td trader15
+                                                    td 123456
+                                                    td.center 朱亦杰
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 11
+                                                    td trader16
+                                                    td 123456
+                                                    td.center 严龙灿
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 12
+                                                    td trader18
+                                                    td 123456
+                                                    td.center 胡边
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 13
+                                                    td trader19
+                                                    td 123456
+                                                    td.center 戴瑶
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 14
+                                                    td trader20
+                                                    td 123456
+                                                    td.center 朱雷军
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 15
+                                                    td trader21
+                                                    td 123456
+                                                    td.center 王英杰
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+                                                tr
+                                                    td 16
+                                                    td trader22
+                                                    td 123456
+                                                    td.center 严小磊
+                                                    td.center 1000
+                                                    td.center 启用
+                                                    td
+                                                        a.edit(href='javascript:;') 修改
+                                                    td
+                                                        a.delete(href='javascript:;') 删除
+
+                    // page end
+            // main content end
+            // right sidebar start
+            include includes/right_sidbar
+            // right sidebar end
+        // Placed js at the end of the document so the pages load faster
+        // Core js
+        script(src='js/lib/jquery-1.8.3.min.js')
+        script(src='bs3/js/bootstrap.min.js')
+        script.include(type='text/javascript', src='js/accordion-menu/jquery.dcjqaccordion.2.7.js')
+        script(src='js/scrollTo/jquery.scrollTo.min.js')
+        script(src='assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js')
+        script(src='js/nicescroll/jquery.nicescroll.js')
+        // Easy Pie Chart
+        script(src='assets/easypiechart/jquery.easypiechart.js')
+        // Sparkline Chart
+        script(src='assets/sparkline/jquery.sparkline.js')
+        // jQuery Flot Chart
+        script(src='assets/flot-chart/jquery.flot.js')
+        script(src='assets/flot-chart/jquery.flot.tooltip.min.js')
+        script(src='assets/flot-chart/jquery.flot.resize.js')
+        script(src='assets/flot-chart/jquery.flot.pie.resize.js')
+        script(type='text/javascript', src='assets/data-tables/jquery.dataTables.js')
+        script(type='text/javascript', src='assets/data-tables/DT_bootstrap.js')
+        // common script init for all pages
+        script(src='js/scripts.js')
+        // script for this page only
+        script(src='js/editable-table/table-editable-trader.js')
+        // END JAVASCRIPTS
+        script.
+            jQuery(document).ready(function () {
+                EditableTable.init();
+            });

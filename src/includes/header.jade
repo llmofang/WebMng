@@ -1,0 +1,48 @@
+header.header.fixed-top.clearfix
+    // logo start
+    .brand
+        a.logo(href='index.html')
+            宽墨量化平台
+        .sidebar-toggle-box
+            .fa.fa-bars
+    // logo end
+    #top_menu.nav.notify-row
+        // notification start
+        ul.nav.top-menu
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    i.fa.fa-envelope-o
+                    span.badge.bg-success 0
+            // inbox dropdown end
+            // notification dropdown start
+            li#header_notification_bar.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    i.fa.fa-bell-o
+                    span.badge.bg-success 0
+            // notification dropdown end
+        // notification end
+    .top-nav.clearfix
+        // search & user info start
+        ul.nav.pull-right.top-menu
+            // user login dropdown start
+            li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    img(alt='', src='images/avatar1_small.jpg')
+                    span.username Chen Hong Qing
+                    b.caret
+                ul.dropdown-menu.extended.logout
+                    li
+                        a(href='#')
+                            i.fa.fa-suitcase
+                            | Profile
+                    li
+                        a(href='#')
+                            i.fa.fa-cog
+                            |  Settings
+                    li
+                        a(href='login.html')
+                            i.fa.fa-key
+                            |  Log Out
+            // user login dropdown end
+        // search & user info end

@@ -1,0 +1,142 @@
+doctype html
+html(lang='en')
+    include includes/head
+    body
+        section#container
+            // header start
+            include includes/header
+            // header end
+            include includes/sidebar
+            // sidebar end
+            // main content start
+            section#main-content
+                section.wrapper
+                    // page start
+                    .row
+                        .col-md-3
+                            .mini-stat.clearfix
+                                span.mini-stat-icon.orange
+                                    i.fa.fa-cny
+                                .mini-stat-info
+                                    span 78,163
+                                    | 今日盈利
+                        .col-md-3
+                            .mini-stat.clearfix
+                                span.mini-stat-icon.yellow-b
+                                    i.fa.fa-money
+                                .mini-stat-info
+                                    span 31,574,073
+                                    | 交易金额
+                        .col-md-3
+                            .mini-stat.clearfix
+                                span.mini-stat-icon.tar
+                                    i.fa.fa-flag
+                                .mini-stat-info
+                                    span 0.50%
+                                    | 盈利水平
+                        .col-md-3
+                            .mini-stat.clearfix
+                                span.mini-stat-icon.pink
+                                    i.fa.fa-gavel
+                                .mini-stat-info
+                                    span 98.64%
+                                    | 券利用率
+                    .row
+                        .col-sm-12
+                            section.panel
+                                header.panel-heading
+                                    | 盈利统计
+                                    span.tools.pull-right
+                                        a.fa.fa-chevron-down(href='javascript:;')
+                                        a.fa.fa-cog(href='javascript:;')
+                                        a.fa.fa-times(href='javascript:;')
+                                .panel-body
+                                    .chartJS
+                                        canvas#bar-chart-js(height='250', width='800')
+                    .row
+                        .col-sm-12
+                            include includes/profit-curve
+                    .row
+                        .col-sm-12
+                            section.panel
+                                header.panel-heading
+                                    | 每日统计
+                                    span.tools.pull-rightn
+                                        a.fa.fa-chevron-down(href='javascript:;')
+                                        a.fa.fa-cog(href='javascript:;')
+                                        a.fa.fa-times(href='javascript:;')
+                                .panel-body
+                                    .adv-table
+                                        table#dynamic-table.display.table.table-bordered.table-striped
+                                            thead
+                                                tr
+                                                    th 日期
+                                                    th 当日盈利
+                                                    th 累积盈利
+                                                    th.hidden-phone 利用率
+                                            tbody
+                                                tr.gradeX
+                                                    td 2015/10/14
+                                                    td 12504.76
+                                                    td 12504.76
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/15
+                                                    td -7,263.20
+                                                    td 5,241.56
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/16
+                                                    td 20,828.20
+                                                    td 26069.76
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/19
+                                                    td 21176.23
+                                                    td 47245.99
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/20
+                                                    td 16619.62
+                                                    td 63865.60
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/21
+                                                    td 55479.73
+                                                    td 119345.33
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/22
+                                                    td 57780.27
+                                                    td 177125.60
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/23
+                                                    td 50063.02
+                                                    td 227188.63
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/26
+                                                    td 68281.72
+                                                    td 295470.34
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/27
+                                                    td 51940.25
+                                                    td 347410.59
+                                                    td.center.hidden-phone 0.3%
+                                                tr.gradeX
+                                                    td 2015/10/28
+                                                    td 78163.03
+                                                    td 425573.62
+                                                    td.center.hidden-phone 0.3%
+                                            tfoot
+                                                tr
+                                                    th 日期
+                                                    th 当日盈利
+                                                    th 累积盈利
+                                                    th.hidden-phone 利用率
+                    // page end
+            // main content end
+        // Placed js at the end of the document so the pages load faster
+        include includes/js

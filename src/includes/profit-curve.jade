@@ -1,0 +1,10 @@
+section.panel
+    header.panel-heading
+        | 收益率曲线
+        span.tools.pull-right
+            a.fa.fa-chevron-down(href='javascript:;')
+            a.fa.fa-cog(href='javascript:;')
+            a.fa.fa-times(href='javascript:;')
+    .panel-body
+        .chartJS
+            canvas#line-chart-js(height='250', width='800')

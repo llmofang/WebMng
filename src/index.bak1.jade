@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  include includes/head
+  body
+    section#container
+      // header start
+      include includes/header
+      // header end
+      // sidebar start
+      include includes/sidebar
+      // sidebar end
+      // main content start
+      section#main-content
+        section.wrapper
+          // mini statistics start
+          .row
+            .col-md-3
+              .mini-stat.clearfix
+                span.mini-stat-icon.orange
+                  i.fa.fa-gavel
+                .mini-stat-info
+                  span 78,163
+                  |今日盈利
+            .col-md-3
+              .mini-stat.clearfix
+                span.mini-stat-icon.tar
+                  i.fa.fa-tag
+                .mini-stat-info
+                  span 31,574,073
+                  |交易金额
+            .col-md-3
+              .mini-stat.clearfix
+                span.mini-stat-icon.pink
+                  i.fa.fa-money
+                .mini-stat-info
+                  span 0.50%
+                  |盈利水平
+            .col-md-3
+                .mini-stat.clearfix
+                    span.mini-stat-icon.yellow-b
+                        i.fa.fa-money
+                    .mini-stat-info
+                        span 98.64%
+                        | 券利用率
+          // mini statistics end
+
+      // main content end
+      // right sidebar start
+      include includes/right_sidbar
+      // right sidebar end
+    // Placed js at the end of the document so the pages load faster
+    // Core js
+
+
